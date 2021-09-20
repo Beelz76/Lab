@@ -1,4 +1,6 @@
-﻿#include <locale.h>
+//Даны два ненулевых числа. Найти сумму, разность, произведение ичастное их квадратов.
+
+#include <locale.h>
 #include <iostream>
 #include <cmath>
 using namespace std;
