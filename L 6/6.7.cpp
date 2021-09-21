@@ -12,11 +12,11 @@ int main()
     cout << "A: ";
     cin >> A;
 
-    b = A * A;
-    c = b * A;
-    A = c * c;
-    A = A * A;
-    A = A * c; 
+    b = A * A; //^2
+    c = b * A; //^3
+    A = c * c; //^6
+    A = A * A; //^12
+    A = A * c; //^15
 
     cout << "A^15 = " << A << endl;
 
