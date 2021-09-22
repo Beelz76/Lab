@@ -9,9 +9,9 @@ int main()
 	cout << "A: ";
 	cin >> A;
 
-	b = A * A;
-	A = b * b;
-	A = A * A;
+	b = A * A; //^2
+	A = b * b; //^4
+	A = A * A; //^8
 
 	cout << "A^8 = " << A << endl;
 
