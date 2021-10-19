@@ -8,8 +8,8 @@ namespace main
     {
         static void Main(string[] args)
         {
-            int A = int.Parse(Console.ReadLine());
-            int B = int.Parse(Console.ReadLine());
+            int A = Convert.ToInt32(Console.ReadLine());
+            int B = Convert.ToInt32(Console.ReadLine());
             int k = 0;
             for(int a=A ; a >= B; a -= B)
             {
