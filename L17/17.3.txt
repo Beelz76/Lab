@@ -1,0 +1,26 @@
+//Дан массив размера N и целые числа K и L (1 ≤ K ≤ L ≤ N). Найти среднее арифметическое элементов массива с номерами от K до L включительно.
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    int N=Convert.ToInt32(Console.ReadLine());
+    int[] mas=new int[N];
+
+    int ind=0, min=99999999;
+    for(int i=0;i<N;i++)
+    {
+        mas[i]=N-i;
+        Console.Write(mas[i] + "[{0}]\t",i);
+    }
+    
+    for(int j=0;j<N;j+=2)
+    {
+        if (mas[j]<min)
+        {
+            min=mas[j];
+            ind=j;
+        }
+    }
+    Console.WriteLine("\n" + "Минимальный элемент массива = "+min+"[{0}]",ind);
+  }
+}
