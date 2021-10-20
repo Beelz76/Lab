@@ -19,7 +19,7 @@ namespace main
             }
 
 
-            for (i = 1; i < N; i += 2)1
+            for (i = 1; i < N; i += 2)
             {
                 Console.Write(arr[i]+ " ");
             }
