@@ -1,4 +1,5 @@
-﻿#include <iostream>
+//Дано вещественное число A и целое число N (> 0). Используя один цикл, найти сумму 1 + A + A2 + A3 + . . . + AN
+#include <iostream>
 #include <cmath>
 using namespace std;
 
