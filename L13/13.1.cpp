@@ -1,4 +1,5 @@
-﻿#include <iostream>
+//Дано вещественное число — цена 1 кг конфет. Вывести стоимость 0.1, 0.2, . . . , 1 кг конфет.
+#include <iostream>
 using namespace std;
 
 int main() {
