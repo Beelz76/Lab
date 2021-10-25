@@ -20,7 +20,7 @@ namespace main
             {
                 double A = Convert.ToDouble(Console.Read());
                 double B = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine(RingS(A, B));
+                Console.WriteLine("S кольца = "+RingS(A, B));
             }
         }
     }
