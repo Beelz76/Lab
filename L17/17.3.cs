@@ -8,11 +8,11 @@ namespace main
 
         static void Main(string[] args)
         {
-            int N = Convert.ToInt32(Console.ReadLine());
+            int N =Int32.Parse(Console.ReadLine());
             int[] mas = new int[N];
             int index = 0, min = 99999999;
 
-            Random r = new Random();
+            var r = new Random();
             for (int i = 0; i < N; i++)
             {
                 mas[i] = r.Next(-10,100) ;
