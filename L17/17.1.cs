@@ -9,10 +9,10 @@ namespace main
         static void Main(string[] args)
         {
             double sum=0;
-            int N = Convert.ToInt32(Console.ReadLine());
+            int N =Int32.Parse2(Console.ReadLine()); 
             int[] arr = new int[N];
-            int K = Convert.ToInt32(Console.ReadLine());
-            int L = Convert.ToInt32(Console.ReadLine());
+            int K =Int32.Parse(Console.ReadLine());
+            int L =Int32.Parse(Console.ReadLine());
 
             for (int i = 0; i < N; i++)
             {
