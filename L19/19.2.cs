@@ -34,7 +34,6 @@ namespace main
                     newList.RemoveAt(b-1);
                     i--;
                 }
-
             }
 
             arr = newList.ToArray();
