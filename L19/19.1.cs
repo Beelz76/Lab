@@ -7,8 +7,7 @@ namespace main
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        {           
             int[] arr = {0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 5, 6, 7, 7, 7, 7, 7 };
         
             foreach (int i in arr)
