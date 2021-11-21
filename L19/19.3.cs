@@ -13,7 +13,7 @@ namespace main
             var r = new Random();
             int min = int.MaxValue, max = 0;
 
-            for (int i=0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 arr[i] = r.Next(1,100);
             }
