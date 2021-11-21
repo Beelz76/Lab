@@ -6,7 +6,6 @@ namespace main
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             int n = Int32.Parse(Console.ReadLine());
@@ -14,36 +13,35 @@ namespace main
             var r = new Random();
             int min = int.MaxValue, max = 0;
 
-            for(int i=0; i < n; i++)
+            for (int i=0; i < n; i++)
             {
                 arr[i] = r.Next(1,100);
             }
 
-            var newlist = arr.ToList();
+            var newList = arr.ToList();
 
-            for (int i = 0; i < newlist.Count; i++)
+            for (int i = 0; i < newList.Count; i++)
             {
-                if (newlist[i] > max)
+                if (newList[i] > max)
                 {
-                    max = newlist[i];
+                    max = newList[i];
                 }
 
-                if (newlist[i] < min)
+                if (newList[i] < min)
                 {
-                    min = newlist[i];
+                    min = newList[i];
                 }
             }
      
-            newlist.Insert(newlist.IndexOf(min), 0);
-            newlist.Insert(newlist.IndexOf(max) + 1, 0);
+            newList.Insert(newList.IndexOf(min), 0);
+            newList.Insert(newList.IndexOf(max) + 1, 0);
 
-            arr = newlist.ToArray();
+            arr = newList.ToArray();
 
-            foreach(int i in arr)
+            foreach (int i in arr)
             {
                 Console.Write($"{i} ");
             }
-
         }
     }
 }
