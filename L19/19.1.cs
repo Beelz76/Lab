@@ -6,7 +6,6 @@ namespace main
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             
@@ -17,26 +16,25 @@ namespace main
                 Console.Write($"{i} ");
             }
 
-            var newlist = arr.ToList();
+            var newList = arr.ToList();
 
-            for (int i = 0; i < newlist.Count-1; i++)
+            for (int i = 0; i < newList.Count-1; i++)
             {
-                if (newlist[i + 1] == newlist[i])
+                if (newList[i + 1] == newList[i])
                 {
-                    newlist.RemoveAt(i+1);
+                    newList.RemoveAt(i+1);
                     i--;
                 }
             }
 
-            arr = newlist.ToArray();
+            arr = newList.ToArray();
 
             Console.WriteLine();
 
-            foreach(int i in arr)
+            foreach (int i in arr)
             {
                 Console.Write($"{i} ");
             }
-
         }
     }
 }
