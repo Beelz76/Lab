@@ -7,21 +7,20 @@ namespace main
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             int[] arr = { 1, 2, 3, 1, 2, 2, 5, 6, 5, 10 };
             int a = 0, b = 0, j;
 
-            var newlist = arr.ToList();
+            var newList = arr.ToList();
 
-            for (int i = 0; i < newlist.Count; i++)
+            for (int i = 0; i < newList.Count; i++)
             {
                 int k = 0;
 
-                for (j = 0; j < newlist.Count; j++)
+                for (j = 0; j < newList.Count; j++)
                 {
-                    if(newlist[i]==newlist[j])
+                    if(newList[i]==newList[j])
                     {
                         k++;
                         a = i;
@@ -31,22 +30,19 @@ namespace main
 
                  if (k == 2)
                 {
-                    newlist.RemoveAt(a);
-                    newlist.RemoveAt(b-1);
+                    newList.RemoveAt(a);
+                    newList.RemoveAt(b-1);
                     i--;
                 }
 
             }
 
-            arr = newlist.ToArray();
+            arr = newList.ToArray();
 
             foreach (int g in arr)
             {
                 Console.Write($"{g} ");
-            }
-
-            
-
+            }         
         }
     }
 }
