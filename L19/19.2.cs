@@ -20,7 +20,7 @@ namespace main
 
                 for (j = 0; j < newList.Count; j++)
                 {
-                    if(newList[i]==newList[j])
+                    if (newList[i] == newList[j])
                     {
                         k++;
                         a = i;
